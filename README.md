@@ -33,6 +33,48 @@ The **Football League Application** is a web-based system designed to manage foo
 git clone https://github.com/your-repo/football-league-app.git
 cd football-league-app
 ```
+Make sure you have `Maven` and `Java 17+` installed.
+Navigate to the backend folder:
+```bash
+cd backend
+```
+
+### Set up the PostgreSQL database:
+Update the database connection in application.properties:
+```
+spring.datasource.url=jdbc:postgresql://localhost:5432/football_league
+spring.datasource.username=your_db_user
+spring.datasource.password=your_db_password
+```
+
+### Setup Database (PostgreSQL in Docker)
+Make sure Docker is installed and running.
+
+### Start the PostgreSQL container:
+```bash
+docker-compose up -d
+```
+### Check if the database is running:
+```bash
+docker ps
+```
+
+### Run the backend:
+```bash
+./mvnw spring-boot:run
+```
+ ### Setup Frontend (React + Vite)
+ ### Install dependencies: 
+```bash
+cd frontend
+npm install
+```
+
+### Start the development server:
+```bash
+npm run dev
+```
+### Open http://localhost:5173 in your browser.
 
 
 ---
