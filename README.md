@@ -30,7 +30,7 @@ The **Football League Application** is a web-based system designed to manage foo
 ## Setup Guide
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-repo/football-league-app.git
+git clone https://github.com/PiotrKlocek/FootballLeagueApp.git
 cd football-league-app
 ```
 Make sure you have `Maven` and `Java 17+` installed.
